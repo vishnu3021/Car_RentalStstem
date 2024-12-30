@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;  
+}
+.signupContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.Formitems{
+    border-radius: 100px 10px 10vw 1px;
+    height: 50vh;
+    width: 45vw;
+    border: 2px solid red;  
+    background-color: wheat;
+    padding-top: 25vh;
+}
+Button{
+    color: blue;
+    width: 10vw;
+}

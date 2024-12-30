@@ -1,0 +1,23 @@
+/* button{
+    color: white;
+    background-color: skyblue;
+    border: none;
+    width: 50vh;
+    /* border-radius: 0px 2px 0px 2px; */
+/* } */ 
+.buttonStyle {
+    padding: "10px 20px";
+    margin : "5px";
+    border: "none";
+    border-radius: "5px";
+   background-color: "#007BFF";
+    color: "#FFFFFF";
+    cursor: "pointer";
+    width:"500px"
+  };
+@media screen and (max-width: 720px) {
+    /* .button {
+        width: 30vh;
+        color: aqua;
+    } */
+}
