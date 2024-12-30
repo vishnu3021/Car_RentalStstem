@@ -1,11 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+// import "./carData.css"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Cards(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.image} />
+   
+    <Card style={{ width: '40rem' }}>
+      <Card.Img variant="top" src={props.image}  style={styleimage} className='cardimage'/>
       <Card.Body>
         <Card.Title>Brand:{props.Brand}</Card.Title>
         <Card.Text>
@@ -19,7 +21,22 @@ function Cards(props) {
         <Button variant="primary">Book Now </Button>
       </Card.Body>
     </Card>
+ 
   );
+}
+const styleimage= {
+  height: '50vh',
+  width: '100%',
+  border:"2px solid   red",
+  objectFit: 'cover',
+  // display:"none"
+
+}
+const maindiv = {
+ color:"red",
+ display:"flex",
+ 
+
 }
 
 export default Cards;

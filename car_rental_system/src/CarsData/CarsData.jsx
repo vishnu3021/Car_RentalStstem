@@ -29,7 +29,7 @@ const CarData = () => {
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
     
       <div style={{ marginBottom: "20px" }}>
-        <div className="Button" style={{display: "flex", justifyContent: "space-evenly"}}>
+        <div className="Button">
         <button onClick={() => filterCars("EV")} className="buttonStyle">
            EV Cars
         </button>
@@ -39,9 +39,6 @@ const CarData = () => {
         <button onClick={() => filterCars("Diesel")} className="buttonStyle">
            Diesel Cars
         </button>
-        {/* <button onClick={() => filterCars("All")} style={buttonStyle}>
-          Show All Cars
-        </button> */}
         <button  onClick={()=>filterCars("All")} className="buttonStyle"> All Cars  </button>
       </div>
       </div>
@@ -49,7 +46,7 @@ const CarData = () => {
       <div style={{ display: "flex", flexWrap: "wrap", gap: "6em" }}>
         {filteredCars.map((car, index) => (
           <div>
-            <Cards image={car.image} Brand={car.brand}  model= {car.model} price={car.price} range={car.range} engine= {car.engine}/>
+            <Cards image={car.image} Brand={car.brand}  model={car.model} price={car.price} range={car.range} engine= {car.engine}/>
           </div>
         ))}
       </div>

@@ -5,19 +5,33 @@
     width: 50vh;
     /* border-radius: 0px 2px 0px 2px; */
 /* } */ 
-.buttonStyle {
-    padding: "10px 20px";
-    margin : "5px";
-    border: "none";
-    border-radius: "5px";
-   background-color: "#007BFF";
-    color: "#FFFFFF";
-    cursor: "pointer";
-    width:"500px"
-  };
-@media screen and (max-width: 720px) {
-    /* .button {
-        width: 30vh;
-        color: aqua;
-    } */
+*{
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+
+}
+.Button{
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttonStyle{
+  background-color: skyblue;
+  display: flex;
+  align-items: end;
+}
+@media screen and (min-width: 370px) {
+  .Button{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+}
+@media screen and (min-width: 720px) {
+  .Button{
+    display: flex;
+    justify-content: space-around;
+  }
 }
