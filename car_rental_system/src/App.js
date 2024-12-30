@@ -21,11 +21,14 @@ function App() {
 
           <Link to="/home">Home</Link>
           <Link to="/cars">Cars</Link>
+          {/* <Link to="/">Home</Link> */}
+          <Link to="/cars">About </Link>
          
        </div>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/cars" element={<CarsData/>}/>
+          {/* <Route path="/cars/:id" element={<Cards carData={carData}/>}/> */}
          
         </Routes>
       </Router>

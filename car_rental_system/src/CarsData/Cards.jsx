@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 
 function Cards(props) {
   return (
-   
-    <Card style={{ width: '40rem' }}>
+    <div style={{border:"2px solid green"}}>
+    <Card style={{ width: '40rem', height:"90vh" }}>
       <Card.Img variant="top" src={props.image}  style={styleimage} className='cardimage'/>
       <Card.Body>
         <Card.Title>Brand:{props.Brand}</Card.Title>
@@ -21,13 +21,15 @@ function Cards(props) {
         <Button variant="primary">Book Now </Button>
       </Card.Body>
     </Card>
+    </div>
  
   );
 }
 const styleimage= {
   height: '50vh',
   width: '100%',
-  border:"2px solid   red",
+  // border:"2px solid   red",
+  // borderRadius:"32px 30px 55px 30px",
   objectFit: 'cover',
   // display:"none"
 

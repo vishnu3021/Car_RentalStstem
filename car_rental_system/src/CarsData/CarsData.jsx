@@ -30,16 +30,28 @@ const CarData = () => {
     
       <div style={{ marginBottom: "20px" }}>
         <div className="Button">
-        <button onClick={() => filterCars("EV")} className="buttonStyle">
+        {/* <button onClick={() => filterCars("EV")} className="buttonStyle">
            EV Cars
-        </button>
-        <button onClick={() => filterCars("Petrol")} className="buttonStyle">
+        </button> */}
+        {/* <button onClick={() => filterCars("Petrol")} className="buttonStyle">
            Petrol Cars
-        </button>
-        <button onClick={() => filterCars("Diesel")} className="buttonStyle">
+        </button> */}
+        {/* <button onClick={() => filterCars("Diesel")} className="buttonStyle">
+           Diesel Cars
+        </button> */}
+        {/* <button  onClick={()=>filterCars("All")} className="buttonStyle"> All Cars  </button> */}
+      </div>
+      <div className="allbtn">
+      <button  onClick={()=>filterCars("All")} > All Cars  </button>
+      <button onClick={() => filterCars("Diesel")}>
            Diesel Cars
         </button>
-        <button  onClick={()=>filterCars("All")} className="buttonStyle"> All Cars  </button>
+        <button onClick={() => filterCars("Petrol")} >
+           Petrol Cars
+        </button>
+        <button onClick={() => filterCars("EV")}>
+           EV Cars
+        </button>
       </div>
       </div>
 
@@ -50,6 +62,7 @@ const CarData = () => {
           </div>
         ))}
       </div>
+     
     </div>
   );
 };
